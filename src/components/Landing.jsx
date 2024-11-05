@@ -1,24 +1,40 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import Button from './Button';
+import Header from './Header';
 import "../styles/layout/Landing.scss";
 
 const Landing = () => {
   return (
-    <div>
-        <div className="landing">
-          <div className="title">
-            <h1>HELLO WORLD</h1>
-            <h2>This is a React Template</h2>
-            <Button /> 
-          </div>
-          {/* <nav className="landing__nav">
-            <Link to="/AboutMe">ABOUT ME</Link>
-            <Link to="/Projects">PROJECTS</Link>
-            <Link to="/Contact">CONTACT</Link>
-          </nav> */}
-        </div>
+
+    <>
+
+    <body>
+      <div className="main--img">
+          <div className="hover--img"></div>
+          <Header />
+
+          {/* <header>
+              <div>
+                  <input type="checkbox" id="menu--toggle"></input>
+                  <label for="menu--toggle" className="menu--icon">
+                      <i className="fas fa-bars icon-hamburguer"></i>
+                      <i className="fas fa-times icon-close"></i>
+                  </label>
+                  <nav className="menu">
+                      <li className="menu--item"><a className="menu--item__link active" href="index.html">HOME</a></li>
+                      <li className="menu--item"><a className="menu--item__link" href="tour.html">TOUR</a></li>
+                      <li className="menu--item"><a className="menu--item__link" href="music.html">MUSIC</a></li>
+                      <li className="menu--item"><a className="menu--item__link" href="shop.html">SHOP</a></li>
+                      <li className="menu--item"><a className="menu--item__link" href="contact.html">CONTACT</a></li>
+                      <li className="menu--item"><a className="menu--item__link" href="profesional.html">PROFESIONAL</a></li>
+                  </nav>
+                  
+              </div>
+          </header> */}
       </div>
+    </body>
+
+    </>
+   
     );
 }
 

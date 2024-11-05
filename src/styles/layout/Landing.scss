@@ -2,135 +2,319 @@
 @use '../core/Variables.scss' as *;
 @use '../core/Mixins.scss' as *;
 
+body{
+  overflow: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+.main--img{
+  background-image: url(/src/images/Hermana_Furia_B1.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.header{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
-.landing{
-  min-height: 100vh;
-  background-color: $mainColor;
-  overflow-x: hidden;
-  overflow-y: auto;  
+
+/* TOUR */
+
+.dossier--link__tour{
+  position: absolute;
+  width: 42vw;
+  height: 1000vh;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+  z-index: 10;
   display: flex;
-  width: 100%;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media(min-width: 1124px){
-    flex-direction: row;
-    justify-content: center;
-  }
+
 }
 
-.title{
+.grid--tour{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.tour--dates{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-shadow:3px 1px 4px black;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 400;
+  /* background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 1px 4px black; */
+  /* border-radius: 0.5rem; */
+  width: 100%;
+  padding: 1.5rem;
+
+}
+/*Hasta aqui tour*/
+
+/*MUSIC*/
+
+.dossier--link__music{
+  position: absolute;
+  width: 45vw;
+  height: 1000vh;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid--music{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+}
+
+.grid--music__div{
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 1px 4px black;
+
+}
+
+.music--img{
+  width: 100%;
+
+}
+
+.music--title{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+
+
+/*hasta aquí music*/
+
+/*SHOP*/
+.dossier--link__shop{
+  position: absolute;
+  width: 50vw;
+  height: 1000vh;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.div--shop{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 1px 4px black;
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  
+
+}
+
+.link--shop{
+  width: 100%;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 400;
+  align-self: center;
+}
+
+
+
+
+
+
+
+/*HASTA AQUI SHOP*/
+
+.main--img__profesional{
+  background-image: url(./img/Hermana_Furia_B2.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* .hover--img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/ray.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.menu--item__link:hover + .hover--img,.menu:hover .hover--img{
+  opacity: 1;
+  pointer-events: auto;
+} */
+
+.menu{
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 3rem;
-  color: $light;
-  font-family: $scndFont;
-  font-weight: 500;
-  font-size: 10rem;
-  @media(min-width: 320px){
-    padding: 0.5rem;
-    text-align: center;
-  }
-  @media(min-width: 768px){
-    padding: 0.7rem;
-  }
-  @media(min-width: 1200px){
-    width: 70%;
-  }
-
-  h1{
-    color: $scndColor;
-    @media(min-width: 320px){
-      margin-top: 1rem;
-      font-size: 1.5rem;
-    }
-    // Ejemplo uso de mixin
-    @include tablet{
-      font-size: 10rem;
-    }
-    // @media(min-width: 768px){
-    //   font-size: 2.2rem;
-    // }
-    @media(min-width: 1024px){
-      font-size: 2.3rem;
-    }
-    @media(min-width: 1200px){
-      font-size: 2.5rem;
-    }
-    @media(min-width: 1300px){
-      font-size: 3rem;
-     
-    }
-    @media(min-width: 1400px){
-      font-size: 3.5rem;
-    }
-  }
-  h2{
-    font-family: $mainFont;
-    @media(min-width: 320px){
-      font-size: 1.8rem;
-    }
-    @media(min-width: 768px){
-      font-size: 3.3rem;
-    }
-    @media(min-width: 1020px){
-      font-size: 3.4rem;
-    }
-    @media(min-width: 1200px){
-      font-size: 3.5rem;
-    }
-    @media(min-width: 1300px){
-      font-size: 4.5rem;
-    }
-    @media(min-width: 1400px){
-      font-size: 4rem;
-    }
-    
-  }
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 1rem;
+  z-index: 12;
+ 
 }
 
-.landing__nav{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  gap: 2rem;
-  padding: 1rem;
-  background-color: $light;
-  border: 4px solid $scndColor;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  overflow-y: scroll;
-  @media(min-width: 1200px){
-    flex-direction: column;
-    height: 100vh;
-    margin-bottom: 0;
+.menu--item{
+  list-style: none;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.menu--item__link{
+  text-decoration: none;
+  color: white;
+  padding: 0.6rem;
+  text-shadow: 3px 1px 15px black;
+}
+
+.menu--item__link:hover{
+  color:#cf8dcb;
+}
+
+/* .active{
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 15px #000000;
+} */
+
+#menu--toggle{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+
+.menu--icon{
+  color: #00000000;
+}
+
+@media (max-width: 768px){
+
+  .menu{
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100vw;
+      height: 80vh;
+      margin-top: 0.5rem;
+      /* background-color: rgba(0, 0, 0, 0.4);
+      -webkit-backdrop-filter: blur(20px); */
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
   }
-  & a{
+  .menu--icon{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 2rem;
+      color: white;
+      position: absolute;
+      top:2rem;
+      left: 2rem;
+      cursor: pointer;
+  }
+
+  .icon-hamburguer{
+      display: inline;
+  }
+  .icon-close{
+      display: none;
+      opacity: 0;
+  }
+
+  #menu--toggle:checked ~ .menu--icon .icon-hamburguer{
+      display: none;
+  }
+
+  #menu--toggle:checked ~ .menu--icon .icon-close{
+      display: flex;
+      opacity: 1;
+      
+  }
+  #menu--toggle:checked ~ .menu--icon + .menu{
+      display: flex;
+    
+  } 
+
+  .tour--dates{
+ 
+      font-size: 0.9rem;
+
+      padding: 1rem;
+  
+  }
+
+  .grid--music{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      height: 90vh;
+
+      /*añadir scroll a las imagenes*/
+  
+   }
+
+
+   .link--shop{
       text-decoration: none;
-      color: $mainColor;
-      font-family: $mainFont;
-      font-weight: 500;
-      &:hover{
-        color: $scndColor;
-        animation: pulse 0.5s;
-        font-weight: 600;
-      }
-      @media(min-width: 320px){
-        font-size: 1rem;
-      }
-      @media(min-width: 768px){
-        font-size: 2rem;
-      }
-      @media(min-width: 1024px){
-        font-size: 2.3rem;
-      }
-      @media(min-width: 1200px){
-        font-size: 3.4rem;
-      }
-      @media(min-width: 1400px){
-        font-size: 4rem;
-      }
-  }
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      color: whitesmoke;
+      text-align: center;
+      font-weight: 400;
+      align-self: center;
+   }
 }
 
