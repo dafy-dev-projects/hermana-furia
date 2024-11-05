@@ -1,0 +1,60 @@
+@use '../core/Reset.scss' as *;
+@use '../core/Variables.scss' as *;
+@use '../core/Mixins.scss' as *;
+
+
+// .notfound__page {
+//   height: 100vh;
+//   margin-bottom: 100px;
+// }
+.notfound__title{
+  color: $mainColor;
+  font-family: $mainFont;
+  font-weight: 500;
+  font-size: 2.5rem;
+  justify-content: center;
+  text-align: center;
+  @media(min-width: 320px){
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  @media(min-width: 768px){
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  @media(min-width: 1024px){
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0.7rem;
+    width: 60%;
+  }
+  @media(min-width: 1200px){
+    font-size: 2rem;
+    text-align: left;
+    padding: 0.7rem;
+    width: 70%;
+  }
+  @media(min-width: 1400px){
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 0.7rem;
+  }
+  &--text{
+    text-align: center;
+    color: $mainColor;
+    font-size: 4rem;
+  }
+}
+
+.notfound__link{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $mainColor;
+    &:hover{
+      color: $scndColor;
+    }
+}
