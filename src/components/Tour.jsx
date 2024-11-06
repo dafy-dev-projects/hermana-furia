@@ -1,7 +1,7 @@
 // Tour.jsx
 import React from 'react';
 import Header from './Header';
-import "../styles/layout/Tour.scss"; // Si tienes estilos separados para Tour
+import "../styles/layout/Tour.scss";
 
 const Tour = () => {
   return (

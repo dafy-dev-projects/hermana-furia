@@ -1,0 +1,190 @@
+
+body{
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+// .main--img__profesional{
+//     background-image: url(./img/Hermana_Furia_B2.png);
+//     height: 100vh;
+//     width: 100vw;
+//     background-position: center;
+//     background-size: cover;
+//     overflow: hidden;
+//     position: relative;
+// }
+
+.main--img__profesional{
+    background-image: url(/src/images/Hermana_Furia_B2.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  
+  }
+
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.dossier--link{
+   position: absolute;
+   width: 40vw;
+   height: 1000vh;
+   bottom: 50%;
+   right: 50%;
+   transform: translate(50%,50%);
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.btn{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 1px 4px black;
+    /* border-radius: 0.5rem; */
+    width: 100%;
+    padding: 2rem;
+}
+
+.btn:hover{
+    color:#8a61a7;
+    cursor: pointer;
+}
+
+.menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 1rem;
+    z-index: 12;
+}
+
+.menu--item{
+    list-style: none;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.menu--item__link{
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem;
+    text-shadow: 3px 1px 15px white;
+}
+
+.menu--item__link:hover{
+    color: #572977;
+}
+/* 
+.active{
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 0.6rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 15px #000000;
+} */
+
+#menu--toggle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.menu--icon{
+    color: #00000000;
+    
+}
+
+
+@media (max-width: 768px){
+  
+    .menu{
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 0.5rem;
+        /* background-color: rgba(255, 255, 255, 0.8);
+        -webkit-backdrop-filter: blur(20px); */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .menu--icon{
+        display: block;
+        font-size: 1.5rem;
+        color: black;
+        position: absolute;
+        top:2rem;
+        left: 2rem;
+        cursor: pointer;
+    }
+  
+    .icon-hamburguer{
+        display: inline;
+    }
+    .icon-close{
+        display: none;
+        opacity: 0;
+    }
+
+    #menu--toggle:checked ~ .menu--icon .icon-hamburguer{
+        display: none;
+    }
+
+    #menu--toggle:checked ~ .menu--icon .icon-close{
+        display: flex;
+        opacity: 10;
+        
+    }
+    #menu--toggle:checked ~ .menu--icon + .menu{
+        display: flex;
+      
+    } 
+    .btn{
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        color: whitesmoke;
+        background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 3px 1px 4px black;
+        padding: 1.5rem;
+        /* border-radius: 0.5rem; */
+        width: 100%;
+    }
+    .btn:hover{
+        color:#8a61a7; ;
+    }
+    
+}
+

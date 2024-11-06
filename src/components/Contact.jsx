@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './Header'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div className="main--img">
+           <Header/>
+        </div>
   )
 }
 
