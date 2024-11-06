@@ -1,12 +1,13 @@
 // Tour.jsx
 import React from 'react';
-import Header from './Header';
+import Header2 from './Header2';
+
 import "../styles/layout/Tour.scss";
 
 const Tour = () => {
   return (
     <div className="main--img__nb">
-      <Header />
+      <Header2 />
       <div className="dossier--link__tour">
         <div className="grid--tour">
           <div>

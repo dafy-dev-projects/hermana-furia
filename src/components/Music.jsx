@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from './Header'
+import Header2 from './Header2';
+
 import "../styles/layout/Music.scss";
 import pic1 from '../images/HermanaFuria-pic1.png';
 import pic2 from '../images/HermanaFuria-pic2.png';
@@ -29,7 +30,7 @@ function Music() {
         </div>
     </div>
     <div className="main--img__nb">
-           <Header/>
+           <Header2/>
         </div>
     
     </>
