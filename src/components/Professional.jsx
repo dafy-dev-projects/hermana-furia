@@ -2,9 +2,6 @@ import React from 'react'
 import Header from './Header'
 import "../styles/layout/Professional.scss";
 
-
-
-
 function Professional() {
   return (
     <>

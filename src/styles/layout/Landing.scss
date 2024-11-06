@@ -28,40 +28,40 @@ html{
 
 /* TOUR */
 
-.dossier--link__tour{
-  position: absolute;
-  width: 42vw;
-  height: 1000vh;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%,50%);
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .dossier--link__tour{
+//   position: absolute;
+//   width: 42vw;
+//   height: 1000vh;
+//   bottom: 50%;
+//   right: 50%;
+//   transform: translate(50%,50%);
+//   z-index: 10;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-}
+// }
 
-.grid--tour{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
+// .grid--tour{
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   gap: 1rem;
+// }
 
-.tour--dates{
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  text-shadow:3px 1px 4px black;
-  color: whitesmoke;
-  text-align: center;
-  font-weight: 400;
-  /* background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: 3px 1px 4px black; */
-  /* border-radius: 0.5rem; */
-  width: 100%;
-  padding: 1.5rem;
+// .tour--dates{
+//   font-family: sans-serif;
+//   font-size: 1.2rem;
+//   text-shadow:3px 1px 4px black;
+//   color: whitesmoke;
+//   text-align: center;
+//   font-weight: 400;
+//   /* background-color: rgba(0, 0, 0, 0.7);
+//   box-shadow: 3px 1px 4px black; */
+//   /* border-radius: 0.5rem; */
+//   width: 100%;
+//   padding: 1.5rem;
 
-}
+// }
 /*Hasta aqui tour*/
 
 /*MUSIC*/
