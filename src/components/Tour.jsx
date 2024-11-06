@@ -5,7 +5,7 @@ import "../styles/layout/Tour.scss";
 
 const Tour = () => {
   return (
-    <div className="main--img">
+    <div className="main--img__nb">
       <Header />
       <div className="dossier--link__tour">
         <div className="grid--tour">

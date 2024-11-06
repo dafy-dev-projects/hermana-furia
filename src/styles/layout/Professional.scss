@@ -1,11 +1,6 @@
-
-body{
-    overflow: hidden;
-}
-
-html{
-    scroll-behavior: smooth;
-}
+@use '../core/Reset.scss' as *;
+@use '../core/Variables.scss' as *;
+@use '../core/Mixins.scss' as *;
 
 
 .main--img__profesional{
@@ -92,14 +87,6 @@ html{
 .menu--item__link:hover{
     color: #572977;
 }
-/* 
-.active{
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 0.6rem;
-    border-radius: 1rem;
-    box-shadow: 8px 8px 15px #000000;
-} */
 
 #menu--toggle{
     position: absolute;

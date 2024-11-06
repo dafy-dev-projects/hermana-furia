@@ -5,7 +5,7 @@ import "../styles/layout/Contact.scss";
 
 function Contact() {
   return (
-    <div className="main--img">
+    <div className="main--img__nb">
            <Header/>
         </div>
   )

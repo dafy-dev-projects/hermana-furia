@@ -1,0 +1,110 @@
+@use '../core/Reset.scss' as *;
+@use '../core/Variables.scss' as *;
+@use '../core/Mixins.scss' as *;
+
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 1rem;
+    z-index: 12;
+   
+  }
+  
+  .menu--item{
+    list-style: none;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  
+  .menu--item__link{
+    text-decoration: none;
+    color: white;
+    padding: 0.6rem;
+    text-shadow: 3px 1px 15px black;
+  }
+  
+  .menu--item__link:hover{
+    color:#cf8dcb;
+  }
+
+
+#menu--toggle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+  }
+  
+  .menu--icon{
+    color: #00000000;
+  }
+  
+  @media (max-width: 768px){
+  
+    .menu{
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        height: 80vh;
+        margin-top: 0.5rem;
+        /* background-color: rgba(0, 0, 0, 0.4);
+        -webkit-backdrop-filter: blur(20px); */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .menu--icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top:2rem;
+        left: 2rem;
+        cursor: pointer;
+    }
+  
+    .icon-hamburguer{
+        display: inline;
+    }
+    .icon-close{
+        display: none;
+        opacity: 0;
+    }
+  
+    #menu--toggle:checked ~ .menu--icon .icon-hamburguer{
+        display: none;
+    }
+  
+    #menu--toggle:checked ~ .menu--icon .icon-close{
+        display: flex;
+        opacity: 1;
+        
+    }
+    #menu--toggle:checked ~ .menu--icon + .menu{
+        display: flex;
+      
+    } 
+  
+  }
+  
+  
