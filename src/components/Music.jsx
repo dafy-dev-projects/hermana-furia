@@ -15,17 +15,26 @@ function Music() {
     <>
      <div className="dossier--link__music">
         <div className="grid--music">
+
             <div className="grid--music__div">
-                <img className="music--img" src={pic1} alt=""/>
+                <a href="">
+                    <img className="music--img" src={pic1} alt="camiseta del grupo"/>
+                </a>
             </div> 
             <div className="grid--music__div">
-                <img className="music--img" src={pic2} alt=""/>
+            <a href="">
+                    <img className="music--img" src={pic2} alt="camiseta del grupo"/>
+                </a>
             </div> 
             <div className="grid--music__div">
-                <img className="music--img" src={pic3} alt=""/>
+            <a href="">
+                    <img className="music--img" src={pic3} alt="portada del grupo"/>
+                </a>
             </div> 
             <div className="grid--music__div">
-                <img className="music--img" src={pic4} alt=""/>
+            <a href="">
+                    <img className="music--img" src={pic4} alt="portada del grupo"/>
+                </a>
             </div> 
         </div>
     </div>
