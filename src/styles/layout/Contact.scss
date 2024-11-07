@@ -13,3 +13,61 @@
     overflow: hidden;
     position: relative;
   }
+
+  .dossier--link__contact{
+    position: absolute;
+    width: 55vw;
+    height: 1000vh;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+  
+  }
+
+  .grid--contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  
+
+    @media (max-width: 1024px){
+      grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    }
+  }
+
+  .media--title{
+    font-family: sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding-bottom:2rem;
+
+  }
+
+  .media{
+    font-family: sans-serif;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   
+
+  }
+
+  .icon{
+    margin-right: 0.5rem;
+  }
+
