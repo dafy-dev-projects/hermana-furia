@@ -5,7 +5,7 @@ import "../styles/layout/Landing.scss";
 
 const Landing = () => {
   return (
-    <div className="main--img">
+    <div className="main--img__landing">
       <div className="hover--img"></div>
       <Header2 />
     </div>
