@@ -8,20 +8,25 @@ import Shop from './Shop';
 import Contact from './Contact';
 import Professional from './Professional';
 import NotFound from './NotFound';
-
+import Cookies from './Cookies'; 
+import CookiesPolicy from './CookiesPolicy';
 
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/tour" element={<Tour />} />
-      <Route path="/music" element={<Music />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/profesional" element={<Professional />} />
-      <Route path="/*" element={<NotFound />} />
-    </Routes>
+    <>
+      <Cookies />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/tour" element={<Tour />} />
+        <Route path="/music" element={<Music />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profesional" element={<Professional />} />
+        <Route path="/cookies-policy" element={<CookiesPolicy />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 

@@ -10,8 +10,6 @@ const NotFound = () => {
       <h1 className='notfound__title--text'>PAGE NOT FOUND</h1>
       <Link className="notfound__link" to="/">HOME</Link>
       </div>
-
-    
     </div>
   );
 }

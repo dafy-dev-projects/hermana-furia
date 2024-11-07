@@ -2,12 +2,6 @@
 @use './core/Variables.scss' as *;
 @use './core/Mixins.scss' as *;
 
-// No hace falta llamar a cada página, se llama en cada componente
-// @use './layout/Landing.scss';
-// @use './layout/Button.scss';
-// @use './layout/NotFound.scss';
-
-
 body{
     overflow: hidden;
   }

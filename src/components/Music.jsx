@@ -11,7 +11,6 @@ import pic4 from '../images/HermanaFuria-pic4.png';
 
 function Music() {
   return (
-
     <>
      <div className="dossier--link__music">
         <div className="grid--music">
@@ -39,8 +38,8 @@ function Music() {
         </div>
     </div>
     <div className="main--img__nb">
-           <Header2/>
-        </div>
+        <Header2/>
+    </div>
     
     </>
    

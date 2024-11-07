@@ -1,7 +1,6 @@
 
 @use './Variables.scss' as *;
 
-/** Media Queries **/
 @mixin mobile {
     @media (min-width: #{$mobile}) {
         @content;
