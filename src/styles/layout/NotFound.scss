@@ -4,7 +4,7 @@
 
 
 .main--img{
-  background-image: url(/src/images/Hermana_Furia_B1.png);
+  background-image: url(/src/images/Hermana_Furia_B3.png);
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -14,13 +14,16 @@
 }
 
 .notfound__title{
-  color: $mainColor;
-  font-family: $mainFont;
   font-weight: 500;
   font-size: 2.5rem;
   justify-content: center;
   text-align: center;
   align-self: center;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   @media(min-width: 320px){
     font-size: 1rem;
     padding: 0.5rem;
@@ -50,8 +53,9 @@
   }
   &--text{
     text-align: center;
-    color: $mainColor;
+    color: white;
     font-size: 4rem;
+    font-family: sans-serif;
   }
 }
 
@@ -60,8 +64,25 @@
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  color: $mainColor;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
     &:hover{
-      color: $scndColor;
+      color:#cf8dcb ;
     }
+}
+
+.notfound--wrap{
+  position: absolute;
+    width: 45vw;
+    height: 1000vh;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
 }
