@@ -14,53 +14,66 @@
     position: relative;
   }
 
-.dossier--link__tour{
-    position: absolute;
-    width: 60vw;
-    height: 1000vh;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%,50%);
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .dossier--link__tour{
+//     position: absolute;
+//     width: 60vw;
+//     height: 1000vh;
+//     bottom: 50%;
+//     right: 50%;
+//     transform: translate(50%,50%);
+//     z-index: 10;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
   
-  }
+//   }
   
-  .grid--tour{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+  // .grid--tour{
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   gap: 1rem;
+  // }
   
-  .tour--dates{
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    text-shadow:3px 1px 4px black;
-    color: whitesmoke;
-    text-align: center;
-    font-weight: 400;
-    width: 100%;
-    padding: 1.5rem;
+  // .tour--dates{
+  //   font-family: sans-serif;
+  //   font-size: 1.5rem;
+  //   text-shadow:3px 1px 4px black;
+  //   color: whitesmoke;
+  //   text-align: center;
+  //   font-weight: 400;
+  //   width: 100%;
+  //   padding: 1.5rem;
   
-  }
+  // }
 
-  .tour--dates:hover{
-    color:#cf8dcb;
-  }
+  // .tour--dates:hover{
+  //   color:#cf8dcb;
+  // }
 
-  @media (max-width: 768px){
-    .tour--dates{
+  // @media (max-width: 768px){
+  //   .tour--dates{
      
-      font-size: 1rem;
+  //     font-size: 1rem;
   
-      padding: 1rem;
+  //     padding: 1rem;
   
-  }
+  // }
   
-  }
+  // }
 
-  .bit-widget-initializer{
-    z-index: 10000000000000000;
-  }
+
+ .widget--container{
+  width: 50vw;
+  position: absolute;
+  z-index: 10000;
+  position: absolute;
+  width: 60vw;
+  height: 1000vh;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%,50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }

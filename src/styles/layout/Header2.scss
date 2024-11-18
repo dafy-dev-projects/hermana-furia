@@ -6,9 +6,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 40vw;
   height: 100vh;
   justify-content: center;
+  z-index: 5;
 }
 
 .menu_2 {
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
-  z-index: 12;
+  // z-index: 12;
 }
 
 .menu--item_2 {
@@ -53,6 +54,9 @@
 }
 
 @media (max-width: 1024px) {
+  .header_2{
+    width: 100vw;
+  }
   .menu_2 {
     display: none;
     position: absolute;
