@@ -18,10 +18,10 @@ function App() {
       <Cookies />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/tour" element={<Tour />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/conciertos" element={<Tour />} />
+        <Route path="/musica" element={<Music />} />
+        <Route path="/tienda" element={<Shop />} />
+        <Route path="/contacto" element={<Contact />} />
         <Route path="/profesional" element={<Professional />} />
         <Route path="/cookies-policy" element={<CookiesPolicy />} />
         <Route path="/*" element={<NotFound />} />

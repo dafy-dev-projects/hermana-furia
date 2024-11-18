@@ -8,34 +8,37 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    justify-content: center;
   }
 
   .menu{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    // align-items: flex-start;
+    // justify-content:center;
     padding-left: 1rem;
     z-index: 12;
-   
   }
   
   .menu--item{
     list-style: none;
-    font-size: 1.7rem;
+    font-size:5em;
     font-family: sans-serif;
     font-weight: 700;
+    margin: 0; 
+    padding: 2rem 0; 
   }
   
   .menu--item__link2{
     text-decoration: none;
-    color: white;
-    padding: 0.6rem;
+    color: black;
+    padding: 0.5rem;
+
   }
-  
+
   .menu--item__link2:hover{
-    color:#cf8dcb;
+    color:brown;
   }
 
 
@@ -50,13 +53,13 @@
   }
   
   .menu--icon{
-    color: #00000000;
+    color: #ffffff;
   }
   
   @media (max-width: 768px){
   
     .menu{
-        display: none;
+        // display: flex;
         position: absolute;
         top: 60px;
         right: 0;
@@ -64,14 +67,17 @@
         height: 80vh;
         margin-top: 0.5rem;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        background-color: rgba(0, 0, 0, 0.7);
+        // align-items: center;
+        justify-content: center;
+        // gap: 0.2rem;
+        // background-color: rgba(0, 0, 0, 0.7);
+        background-color: #292929;
     }
     .menu--icon{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         font-size: 2rem;
         color: white;
         position: absolute;
@@ -79,20 +85,29 @@
         left: 2rem;
         cursor: pointer;
     }
-  
-    .icon-hamburguer{
-        display: inline;
+    .menu--item__link2{
+      color: white;
     }
-    .icon-close{
+    // .menu--item{
+    //   padding: 0;
+    // }
+  
+    .icon-hamburguer-2{
+        display: inline;
+        color: #ffffff;
+    }
+    .icon-close-2{
         display: none;
         opacity: 0;
+        color: #ffffff;
+
     }
   
-    #menu--toggle:checked ~ .menu--icon .icon-hamburguer{
+    #menu--toggle:checked ~ .menu--icon .icon-hamburguer-2{
         display: none;
     }
   
-    #menu--toggle:checked ~ .menu--icon .icon-close{
+    #menu--toggle:checked ~ .menu--icon .icon-close-2{
         display: flex;
         opacity: 1;
         

@@ -13,24 +13,28 @@ function Header() {
           <i className="fas fa-times icon-close"></i>
         </label>
         <nav className="menu">
+          <ul>
           <li className="menu--item">
-            <Link to="/" className="menu--item__link">HOME</Link>
+            <Link to="/" className="menu--item__link2">INICIO</Link>
           </li>
           <li className="menu--item">
-            <Link to="/tour" className="menu--item__link">TOUR</Link>
+            <Link to="/conciertos" className="menu--item__link2">CONCIERTOS</Link>
           </li>
           <li className="menu--item">
-            <Link to="/music" className="menu--item__link">MUSIC</Link>
+            <Link to="/music" className="menu--item__link2">MUSICA</Link>
           </li>
           <li className="menu--item">
-            <Link to="/shop" className="menu--item__link">SHOP</Link>
+            <Link to="/shop" className="menu--item__link2">TIENDA</Link>
           </li>
           <li className="menu--item">
-            <Link to="/contact" className="menu--item__link">CONTACT</Link>
+            <Link to="/contacto" className="menu--item__link2">CONTACTO</Link>
           </li>
           <li className="menu--item">
-            <Link to="/profesional" className="menu--item__link">PROFESIONAL</Link>
+            <Link to="/profesional" className="menu--item__link2">PROFESIONAL</Link>
           </li>
+
+          </ul>
+ 
         </nav>
       </div>
     </header>

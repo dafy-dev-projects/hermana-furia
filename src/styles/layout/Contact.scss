@@ -26,9 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-
-  
   }
 
   .grid--contact{
@@ -40,7 +37,7 @@
 
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
     }
   }
 
@@ -49,6 +46,9 @@
     color: white;
     font-size: 2rem;
     padding-bottom:2rem;
+    &:hover{
+      color: brown;
+    }
 
   }
 
@@ -63,11 +63,18 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    &:hover{
+      color: brown;
+    }
    
 
   }
 
   .icon{
     margin-right: 0.5rem;
+    &:hover{
+      color: brown;
+    }
+
   }
 

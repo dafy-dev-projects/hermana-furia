@@ -8,17 +8,17 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    justify-content: center;
   }
 
   .menu{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    // align-items: flex-start;
+    // justify-content: center;
     padding-left: 1rem;
     z-index: 12;
-   
   }
   
   .menu--item{
@@ -26,16 +26,19 @@
     font-size: 1.7rem;
     font-family: sans-serif;
     font-weight: 700;
+    margin: 0;
+    padding: 2rem 0;
+
   }
   
-  .menu--item__link{
+  .menu--item__link2{
     text-decoration: none;
     color: white;
-    padding: 0.6rem;
+    padding: 0.5rem;
   }
   
   .menu--item__link:hover{
-    color:#cf8dcb;
+    color:brown;
   }
 
 
@@ -49,8 +52,8 @@
     pointer-events: none;
   }
   
-  .menu--icon{
-    color: #00000000;
+  .menu--icon__2{
+    color: black;
   }
   
   @media (max-width: 768px){
@@ -64,28 +67,41 @@
         height: 80vh;
         margin-top: 0.5rem;
         flex-direction: column;
-        align-items: flex-start;
+        // align-items: flex-start;
+        justify-content: center;
         gap: 1rem;
-        background-color: rgba(0, 0, 0, 0.4);
+        // background-color: rgba(0, 0, 0, 0.4);
+        background: linear-gradient(
+          to bottom,
+          rgba(41, 41, 41, 0) 0%,      
+          #292929e1 20%,                 
+          #292929e1 75%,                 
+          rgba(41, 41, 41, 0) 100%     
+        );
     }
     .menu--icon{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         font-size: 2rem;
-        color: white;
+        color: black;
         position: absolute;
         top:2rem;
         left: 2rem;
         cursor: pointer;
     }
+    .menu--item{
+      padding-top: 0.1rem;
+    }
   
-    .icon-hamburguer{
+    .icon-hamburguer__2{
         display: inline;
+        color: black;
     }
     .icon-close{
         display: none;
         opacity: 0;
+        color: black;
     }
   
     #menu--toggle:checked ~ .menu--icon .icon-hamburguer{
