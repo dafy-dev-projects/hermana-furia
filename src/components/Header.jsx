@@ -1,4 +1,3 @@
-// Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/layout/Header.scss";
@@ -14,27 +13,25 @@ function Header() {
         </label>
         <nav className="menu">
           <ul>
-          <li className="menu--item">
-            <Link to="/" className="menu--item__link2">INICIO</Link>
-          </li>
-          <li className="menu--item">
-            <Link to="/conciertos" className="menu--item__link2">CONCIERTOS</Link>
-          </li>
-          <li className="menu--item">
-            <Link to="/music" className="menu--item__link2">MUSICA</Link>
-          </li>
-          <li className="menu--item">
-            <Link to="/shop" className="menu--item__link2">TIENDA</Link>
-          </li>
-          <li className="menu--item">
-            <Link to="/contacto" className="menu--item__link2">CONTACTO</Link>
-          </li>
-          <li className="menu--item">
-            <Link to="/profesional" className="menu--item__link2">PROFESIONAL</Link>
-          </li>
-
+            <li className="menu--item">
+              <Link to="/" className="menu--item__link">INICIO</Link>
+            </li>
+            <li className="menu--item">
+              <Link to="/conciertos" className="menu--item__link">CONCIERTOS</Link>
+            </li>
+            <li className="menu--item">
+              <Link to="/musica" className="menu--item__link">MÚSICA</Link>
+            </li>
+            <li className="menu--item">
+              <Link to="/tienda" className="menu--item__link">TIENDA</Link>
+            </li>
+            <li className="menu--item">
+              <Link to="/contacto" className="menu--item__link">CONTACTO</Link>
+            </li>
+            <li className="menu--item">
+              <Link to="/profesional" className="menu--item__link">PROFESIONAL</Link>
+            </li>
           </ul>
- 
         </nav>
       </div>
     </header>

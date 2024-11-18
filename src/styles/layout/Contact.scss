@@ -4,7 +4,7 @@
 
 
 
-.main--img__nb{
+.main--img__nb1{
     background-image: url(/src/images/Hermana_Furia_B3.png);
     height: 100vh;
     width: 100vw;
@@ -12,21 +12,37 @@
     background-size: cover;
     overflow: hidden;
     position: relative;
+    @media (max-width: 1024px){
+      overflow: scroll;
+    }
   }
 
-  .dossier--link__contact{
+  .dossier--link__contact {
     position: absolute;
     width: 55vw;
-    height: 1000vh;
+    height: 100vh;
     bottom: 50%;
     right: 50%;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
     z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
+
+@media (max-width: 1024px) {
+    .dossier--link__contact {
+        transform: translate(50%, 53%); 
+    }
+}
+
+@media (max-width: 768px) {
+    .dossier--link__contact {
+        transform: translate(50%, 70%); 
+    }
+}
+
 
   .grid--contact{
     display: grid;
@@ -41,13 +57,28 @@
     }
   }
 
+  .grid--contact__data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0.9rem;
+    gap: 1rem;
+    font-size: 0.8rem;
+    @media (max-width: 1024px){
+      grid-template-columns: 1fr;
+    }
+
+
+  }
+
   .media--title{
     font-family: sans-serif;
     color: white;
-    font-size: 2rem;
-    padding-bottom:2rem;
-    &:hover{
-      color: brown;
+    font-size: 1.5rem;
+    padding-bottom:1.5rem;
+    padding-top:1.5rem;
+    text-align: center;
+    @media (max-width: 1024px){
+      font-size: 1rem;
     }
 
   }
@@ -66,6 +97,9 @@
     &:hover{
       color: brown;
     }
+    @media (max-width: 1024px){
+      font-size: 0.9rem;
+     }
    
 
   }
@@ -75,6 +109,7 @@
     &:hover{
       color: brown;
     }
+  
 
   }
 
