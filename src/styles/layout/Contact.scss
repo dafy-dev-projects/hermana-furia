@@ -53,7 +53,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -75,8 +74,8 @@
   }
 
   .media--title{
-    font-family: sans-serif;
-    color: white;
+    font-family: $mainFont;
+    color: $white;
     font-size: 1.5rem;
     padding-bottom:1.5rem;
     padding-top:1.5rem;
@@ -88,9 +87,9 @@
   }
 
   .media {
-    font-family: sans-serif;
-    color: white; 
-    border: 3px solid white;
+    font-family: $mainFont;
+    color: $white; 
+    border: 3px solid $white;
     text-align: center;
     font-size: 1.5rem;
     padding: 0.7rem;
@@ -100,8 +99,8 @@
     text-decoration: none;
     transition: color 0.3s ease, border-color 0.3s ease;
     &:hover {
-      color: brown; 
-      border-color: brown; 
+      color:$mainColor; 
+      border-color: $mainColor; 
     }
     @media (max-width: 1024px) {
       font-size: 0.9rem;
@@ -115,6 +114,6 @@
   .fa-solid{
     padding-right: 0.5rem;
     &:hover {
-      color: brown; 
+      color: $mainColor; 
     }
   }

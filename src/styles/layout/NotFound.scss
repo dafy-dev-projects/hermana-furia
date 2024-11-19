@@ -53,9 +53,9 @@
   }
   &--text{
     text-align: center;
-    color: white;
+    color: $white;
     font-size: 4rem;
-    font-family: sans-serif;
+    font-family: $mainFont;
   }
 }
 
@@ -64,11 +64,11 @@
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: $mainFont;
   font-size: 2rem;
-  color: white;
+  color: $white;
     &:hover{
-      color:#cf8dcb ;
+      color:$lightAccent;
     }
 }
 

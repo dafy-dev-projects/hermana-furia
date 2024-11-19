@@ -22,7 +22,7 @@
 .menu--item_2 {
   list-style: none;
   font-size: 1.7rem;
-  font-family: sans-serif;
+  font-family: $mainFont;
   font-weight: 700;
   margin: 0;
   padding: 2rem 0;
@@ -30,12 +30,12 @@
 
 .menu--item__link2 {
   text-decoration: none;
-  color: white;
+  color:$white;
   padding: 0.5rem;
 }
 
 .menu--item__link2:hover {
-  color: brown;
+  color: $mainColor;
 }
 
 #menu--toggle_2 {
@@ -49,7 +49,7 @@
 }
 
 .menu--icon_2 {
-  color: white;
+  color: $white;
 }
 
 @media (max-width: 1024px) {
@@ -69,16 +69,16 @@
   }
 
   .menu--icon_2 {
-    color: white;
+    color: $white;;
   }
   .icon-hamburguer-2{
     display: inline;
-    color: white;
+    color: $white;;
 }
 .icon-close-2{
     display: none;
     opacity: 0;
-    color: white;
+    color: $white;
 }
 
 #menu--toggle:checked ~ .menu--icon .icon-hamburguer-2{
