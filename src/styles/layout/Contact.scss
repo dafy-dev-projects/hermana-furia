@@ -53,6 +53,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
+    width: 100%;
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -62,15 +63,21 @@
   .grid--contact__data{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0.9rem;
     gap: 1rem;
     font-size: 0.8rem;
+    width: 55vw;
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
       justify-content: center;
+      width: 100%;
     }
+  }
 
-
+  .grid--contact__div{
+    width: 100%;
+    & a{
+      width: 100%;
+    }
   }
 
   .media--title{
@@ -80,10 +87,10 @@
     padding-bottom:1.5rem;
     padding-top:1.5rem;
     text-align: center;
+    width: 100%;
     @media (max-width: 1024px){
       font-size: 1rem;
     }
-
   }
 
   .media {

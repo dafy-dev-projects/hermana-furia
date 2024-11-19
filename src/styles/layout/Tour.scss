@@ -66,8 +66,8 @@
   position: absolute;
   position: absolute;
   width: 60vw;
-  height: 80vh;
-  bottom: 42%;
+  height: 50vh;
+  bottom: 40%;
   right: 50%;
   transform: translate(50%,50%);
   z-index: 10;
@@ -87,6 +87,12 @@
 }
 .bit-widget-container{
   width: 100%;
+
+}
+
+.bit-container{
+  width: 100%;
+  border: 3px solid $white;
 
 }
 

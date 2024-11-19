@@ -21,7 +21,6 @@ function Professional() {
   if (!isAuthenticated) {
     return (
       <div className="pin-container">
-        {/* <h2>INTRODUCE EL PIN PARA ACCEDER</h2> */}
         <form onSubmit={handlePinSubmit}>
           <input
             type="password"
@@ -42,7 +41,7 @@ function Professional() {
       <div className="main--img__profesional">
         <Header />
         <div className="dossier--link">
-          <div>
+          <div className='grid--wrap'>
             <div className="grid">
               <a
                 className="grid__item btn"
@@ -53,7 +52,7 @@ function Professional() {
                 PRENSA
               </a>
 
-              <div>
+
                 <a
                   className="grid__item btn"
                   href="https://drive.google.com/drive/folders/1g9W1Lsun-tp13VnbEgIaZkljXwpF63zs"
@@ -62,10 +61,10 @@ function Professional() {
                 >
                   FOTOS
                 </a>
-              </div>
+         
             </div>
           </div>
-          <div>
+          <div className='grid--wrap'>
             <h2 className="media--title2">INFORMACIÓN Y CONTRATACIÓN</h2>
             <div className="grid--contact__data2">
               <div>

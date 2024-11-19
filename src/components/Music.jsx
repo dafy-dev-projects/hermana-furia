@@ -29,7 +29,7 @@ function Music() {
             <a href="https://www.youtube.com/@HermanaFuria" target='about_blank' rel='noopener noreferrer'>
                     <img className="music--img" src={pic2} alt="foto del grupo"/>
                 </a>
-                <a href="https://www.youtube.com/@HermanaFuria" className="music--link" target='about_blank' rel='noopener noreferrer'>ESCUCHAR</a>
+                <a href="https://www.youtube.com/@HermanaFuria" className="music--link" target='about_blank' rel='noopener noreferrer'>YOUTUBE</a>
             </div> 
         </div>
     </div>

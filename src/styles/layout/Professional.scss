@@ -32,38 +32,45 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    width: 70vw;
+  }
 }
-
+.grid--wrap{
+  width: 100%;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  width: 100%;
+
 }
 
 .grid__item {
   height: 100%;
   width: 100%;
   align-content: center;
+  border: 3px solid $black;
 }
 
 .btn {
   width: 100%;
-  height: 100%;
   font-family: $mainFont;
   font-size: 2.5rem;
-  color: $white;
+  color: $black;
   text-align: center;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 3px 1px 4px black;
-  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.623);
+  padding: 0.5rem;
   text-decoration: none;
 }
 
 .btn:hover {
   color: $mainColor;
+  border-color: $mainColor;
   cursor: pointer;
 }
 
@@ -145,18 +152,13 @@
   #menu--toggle:checked ~ .menu--icon + .menu {
     display: flex;
   }
-  .btn {
-    font-family: $mainFont;
-    font-size: 1.5rem;
-    color: $white;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 3px 1px 4px black;
-    padding: 1.5rem;
-    width: 100%;
-  }
-  .btn:hover {
-    color: $mainColor;
-  }
+  // .btn {
+  //   @media (max-width: 1024px) {
+  //     display: flex;
+  //     justify-content: center;
+  //   }
+  // }
+
 }
 
 .media--title2 {
@@ -246,8 +248,7 @@
 
 .pin-container input {
   padding: 0.5rem;
-  border: 1px solid $white;
-  border-radius: 5px;
+  border: 3px solid $black;
   font-size: 1rem;
 }
 
@@ -257,8 +258,7 @@
   font-size: 1rem;
   color: $white;
   background-color: $mainColor;
-  border: none;
-  border-radius: 5px;
+  border: 3px solid black;
   cursor: pointer;
 }
 
@@ -276,7 +276,7 @@
 .home-link {
   color: $black;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: inline-block;
   font-size: 1rem;
   font-family: $mainFont;
@@ -286,6 +286,6 @@
 }
 
 .home-link:hover {
-  text-decoration: underline;
+  color:$mainColor;
 }
 

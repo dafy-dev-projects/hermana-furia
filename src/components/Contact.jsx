@@ -45,11 +45,11 @@ function Contact() {
               <h2 className='media--title'>INFORMACIÓN Y CONTRATACIÓN</h2>
               <div  className='grid--contact__data'>
 
-              <div>
+              <div className='grid--contact__div'>
              
                   <a  href="mailto:inescollarte@entrebotones.com" className="media" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i> inescollarte@entrebotones.com</a>
                 </div>
-                <div>
+                <div className='grid--contact__div'>
                   <a  href="tel:+34663869749" className="media" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-phone"></i>+34 663 869 749</a>
                 </div>
 

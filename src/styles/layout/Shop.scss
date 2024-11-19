@@ -21,7 +21,7 @@
     bottom: 50%;
     right: 50%;
     transform: translate(50%,50%);
-    z-index: 10;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,12 +31,13 @@
   .div--shop{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 1.5rem;
-    width: 100%;
+    width: 40%;
   }
   
   .link--shop{
-    width: 100%;
+    // width: 40%;
     font-family: $mainFont;
     color: $white;
     border: 3px solid $white;
@@ -49,12 +50,13 @@
     text-decoration: none;
     &:hover{
       color: $mainColor;
+      border-color: $mainColor;
     }
-      @media (max-width: 768px){
-          font-size: 1.5rem;
+      @media (min-width: 768px){
+          font-size: 1.8rem;
       }
-      @media (max-width: 1024px){
-        font-size:1.9rem;
+      @media (min-width: 1024px){
+        font-size:1.6rem;
       }
       }
   
