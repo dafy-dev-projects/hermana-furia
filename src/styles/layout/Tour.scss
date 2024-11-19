@@ -63,17 +63,31 @@
 
 
  .widget--container{
-  width: 50vw;
   position: absolute;
-  z-index: 10000;
   position: absolute;
   width: 60vw;
-  height: 1000vh;
-  bottom: 50%;
+  height: 80vh;
+  bottom: 42%;
   right: 50%;
   transform: translate(50%,50%);
   z-index: 10;
   display: flex;
   justify-content: center;
-  align-items: center;
- }
+  overflow: scroll; 
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none; 
+  }
+  @media (max-width:1024px){
+    width: 75vw;
+  }
+}
+.bit-widget-container{
+  width: 100%;
+
+}
+
+

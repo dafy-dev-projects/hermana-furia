@@ -84,7 +84,7 @@ const Tour = () => {
          data-event-rsvp-cta-border-radius="2px"
          data-follow-section-position="top"
          data-follow-section-alignment="center"
-         data-follow-section-header-text="Get updates on new shows, new music, and more"
+         data-follow-section-header-text="Recibe actualizaciones de nuevos shows, música y más" 
          data-follow-section-cta-size="medium"
          data-follow-section-cta-text="FOLLOW"
          data-follow-section-cta-icon="false"

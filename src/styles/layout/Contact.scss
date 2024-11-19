@@ -12,15 +12,13 @@
     background-size: cover;
     overflow: hidden;
     position: relative;
-    @media (max-width: 1024px){
-      overflow: scroll;
-    }
+  
   }
 
   .dossier--link__contact {
     position: absolute;
     width: 55vw;
-    height: 100vh;
+    height: 80vh;
     bottom: 50%;
     right: 50%;
     transform: translate(50%, 50%);
@@ -29,19 +27,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 1024px) {
-    .dossier--link__contact {
-        transform: translate(50%, 53%); 
+    @media (max-width: 1024px){
+      overflow: scroll;
+      justify-content:flex-start;
+      align-items:normal;
+      width: 95%;
     }
 }
 
-@media (max-width: 768px) {
-    .dossier--link__contact {
-        transform: translate(50%, 70%); 
-    }
-}
+// @media (max-width: 1024px) {
+//     .dossier--link__contact {
+//         transform: translate(50%, 50%); 
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .dossier--link__contact {
+//         transform: translate(50%, 50%); 
+//     }
+// }
 
 
   .grid--contact{
@@ -49,7 +53,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-  
 
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
@@ -65,6 +68,7 @@
     font-size: 0.8rem;
     @media (max-width: 1024px){
       grid-template-columns: 1fr;
+      justify-content: center;
     }
 
 
@@ -83,9 +87,9 @@
 
   }
 
-  .media{
+  .media {
     font-family: sans-serif;
-    color: white;
+    color: white; 
     border: 3px solid white;
     text-align: center;
     font-size: 1.5rem;
@@ -94,22 +98,23 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    &:hover{
-      color: brown;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    &:hover {
+      color: brown; 
+      border-color: brown; 
     }
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
       font-size: 0.9rem;
-     }
-   
-
-  }
-
-  .icon{
-    margin-right: 0.5rem;
-    &:hover{
-      color: brown;
+      align-items: center;
     }
-  
-
   }
-
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  .fa-solid{
+    padding-right: 0.5rem;
+    &:hover {
+      color: brown; 
+    }
+  }

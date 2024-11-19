@@ -12,7 +12,7 @@ function Header2() {
           <i className="fas fa-times icon-close-2"></i>
         </label>
         <nav className="menu">
-          <ul>
+          <ul >
             <li className="menu--item">
               <Link to="/" className="menu--item__link2">INICIO</Link>
             </li>

@@ -34,13 +34,13 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-
     justify-content: center;
     align-items: center;
 }
@@ -63,6 +63,7 @@
     box-shadow: 3px 1px 4px black;
     padding: 2rem;
     text-decoration: none;
+    align-content: center;
 
 }
 
@@ -169,3 +170,60 @@
     
 }
 
+.media--title2{
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom:1.5rem;
+    padding-top:1.5rem;
+    text-align: center;
+    @media (max-width: 1024px){
+      font-size: 1rem;
+    }
+
+  }
+
+  .media2 {
+    font-family: sans-serif;
+    color: black; 
+    border: 3px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    &:hover {
+      color: brown; 
+      border-color: brown; 
+    }
+    @media (max-width: 1024px) {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  .fa-solid{
+    padding-right: 0.5rem;
+    &:hover {
+      color: brown; 
+    }
+  }
+
+
+  .grid--contact__data2{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0.9rem;
+    gap: 1rem;
+    font-size: 0.8rem;
+    @media (max-width: 1024px){
+      grid-template-columns: 1fr;
+    }
+
+
+  }
