@@ -32,22 +32,82 @@
   
   }
   
-  .grid--music{
+  // .grid--music{
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   gap: 1rem;
+  //   width: 100%;
+  //   @media (max-width: 1024px){
+  //     width: 90%;
+  //     overflow: scroll;
+  //     -ms-overflow-tyle: none;
+  //     &::-webkit-scrollbar {
+  //       display: none; 
+  //     }
+  //   }
+
+  // }
+
+  // .grid--music {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   gap: 1rem;
+  //   width: 100%;
+  //   justify-items: center;
+  //   align-items: center;
+  
+  //   @media (max-width: 1024px) {
+  //     grid-template-columns: 1fr;
+  //     width: 90%;
+  //     overflow: scroll;
+  //     -ms-overflow-style: none;
+  //     &::-webkit-scrollbar {
+  //       display: none;
+  //     }
+  //   }
+  // }
+
+  .grid--music {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    width: 100%;
-    @media (max-width: 1024px){
-      width: 90%;
+    width: 80%;
+    justify-items: center;
+    align-items: center;
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+      width: 100%;
       overflow: scroll;
-      -ms-overflow-tyle: none;
+      -ms-overflow-style: none;
       &::-webkit-scrollbar {
-        display: none; 
+        display: none;
       }
     }
-  
-  
   }
+  
+  .grid--music__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  .grid--music__div:nth-child(3) {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    @media (max-width: 768px) {
+      grid-column: span 1;
+    }
+  }
+
 
   .grid--music__div {
     width: 100%;
@@ -62,8 +122,6 @@
   
 .music--img {
   width: 100%; 
-  height: auto; 
-  display: block; 
 }
   
   .music--title{
@@ -92,7 +150,7 @@
 }
 
 
-  @media (max-width: 1024px){
+  @media (max-width: 768px){
 
   .grid--music{
       display: grid;
@@ -111,4 +169,14 @@
     width: 10rem;
   }
   
+  }
+
+  .music--iframe{
+    width: 85%;
+    @media (min-width: 768px){
+      width: 43%;
+    }
+    @media (min-width: 820px){
+      width: 100%;
+    }
   }

@@ -2,7 +2,6 @@ import React from 'react'
 import Header2 from './Header2';
 
 import "../styles/layout/Music.scss";
-import pic2 from '../images/HermanaFuria-pic2.png';
 import pic3 from '../images/HermanaFuria-pic3.png';
 import pic4 from '../images/HermanaFuria-pic4.png';
 
@@ -26,10 +25,19 @@ function Music() {
                 <a href="https://orcd.co/turbo_hermana_furia" className="music--link" target='about_blank' rel='noopener noreferrer'>ESCUCHAR</a>
             </div> 
             <div className="grid--music__div">
-            <a href="https://www.youtube.com/@HermanaFuria" target='about_blank' rel='noopener noreferrer'>
-                    <img className="music--img" src={pic2} alt="foto del grupo"/>
-                </a>
-                <a href="https://www.youtube.com/@HermanaFuria" className="music--link" target='about_blank' rel='noopener noreferrer'>YOUTUBE</a>
+          
+            <iframe
+                className="music--iframe"
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/videoseries?list=PLByzmHUPHNyEZyOOQVxc8RKdXtblcUTyS"
+                title="YouTube Playlist"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+          
+                <a href="https://www.youtube.com/embed/videoseries?list=PLByzmHUPHNyEZyOOQVxc8RKdXtblcUTyS" className="music--link" target='about_blank' rel='noopener noreferrer'>YOUTUBE</a>
             </div> 
         </div>
     </div>
