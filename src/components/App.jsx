@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import "../styles/App.scss";
@@ -11,10 +12,12 @@ import NotFound from './NotFound';
 import Cookies from './Cookies'; 
 import CookiesPolicy from './CookiesPolicy';
 
-function App() {
+// Importamos el HoverProvider
+import { HoverProvider } from '../context/HoverContext.jsx';
 
+function App() {
   return (
-    <>
+    <HoverProvider>
       <Cookies />
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -26,7 +29,7 @@ function App() {
         <Route path="/cookies-policy" element={<CookiesPolicy />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
-    </>
+    </HoverProvider>
   );
 }
 
