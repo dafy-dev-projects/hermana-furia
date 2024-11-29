@@ -5,8 +5,6 @@ import "../styles/layout/Music.scss";
 import pic3 from '../images/HermanaFuria-pic3.png';
 import pic4 from '../images/HermanaFuria-pic4.png';
 
-
-
 function Music() {
   return (
     <>

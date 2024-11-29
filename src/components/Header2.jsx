@@ -5,7 +5,7 @@ import "../styles/layout/Header2.scss";
 import { useHover } from '../context/HoverContext.jsx';
 
 function Header2() {
-  const { handleLinkHover } = useHover();  // Usamos la función del contexto
+  const { handleLinkHover } = useHover();  
 
   return (
     <header className="header_2">
@@ -21,8 +21,8 @@ function Header2() {
               <Link 
                 to="/" 
                 className="menu--item__link2"
-                onMouseEnter={() => handleLinkHover(true)}  // Cambiamos el estado a true
-                onMouseLeave={() => handleLinkHover(false)} // Cambiamos el estado a false
+                onMouseEnter={() => handleLinkHover(true)}  
+                onMouseLeave={() => handleLinkHover(false)} 
               >
                 INICIO
               </Link>

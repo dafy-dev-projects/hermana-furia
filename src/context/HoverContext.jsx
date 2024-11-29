@@ -1,10 +1,8 @@
-// HoverContext.js
+
 import React, { createContext, useState, useContext } from 'react';
 
-// Crear un contexto
 const HoverContext = createContext();
 
-// Crear un proveedor de contexto
 export const HoverProvider = ({ children }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -19,7 +17,6 @@ export const HoverProvider = ({ children }) => {
   );
 };
 
-// Hook para usar el contexto
 export const useHover = () => {
   return useContext(HoverContext);
 };

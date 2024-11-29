@@ -1,11 +1,9 @@
 import React from 'react'
 import Header2 from './Header2';
-
 import "../styles/layout/Shop.scss";
 
 
 function Shop() {
-
   return (
     <>
      <div className="dossier--link__shop">

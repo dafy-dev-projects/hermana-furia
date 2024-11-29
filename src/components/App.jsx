@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import "../styles/App.scss";
@@ -12,7 +11,7 @@ import NotFound from './NotFound';
 import Cookies from './Cookies'; 
 import CookiesPolicy from './CookiesPolicy';
 
-// Importamos el HoverProvider
+
 import { HoverProvider } from '../context/HoverContext.jsx';
 
 function App() {

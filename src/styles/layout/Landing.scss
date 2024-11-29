@@ -1,4 +1,4 @@
-// Landing.scss
+
 @use '../core/Reset.scss' as *;
 @use '../core/Variables.scss' as *;
 @use '../core/Mixins.scss' as *;
@@ -11,9 +11,9 @@
   background-size: cover;
   overflow: hidden;
   position: relative;
-  transition: background-image 0.5s ease; /* Transición para el cambio de fondo */
+  transition: background-image 0.5s ease; 
 }
 
 .main--img__landing.hovered {
-  background-image: url('/src/images/Hermana_Furia_B4.png'); /* Imagen cuando el ratón está sobre el enlace */
+  background-image: url('/src/images/Hermana_Furia_B4.png'); 
 }

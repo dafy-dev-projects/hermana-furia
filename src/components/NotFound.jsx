@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/layout/NotFound.scss";
 
-
 const NotFound = () => {
   return (
     <div className="main--img">

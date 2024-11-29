@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react'; 
 import Header2 from './Header2';  
 import "../styles/layout/Tour.scss";  
