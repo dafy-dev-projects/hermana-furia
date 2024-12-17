@@ -1,13 +1,17 @@
 import React from 'react';
-import Header2 from './Header2';
+import Header2 from './Header2'
+
 import "../styles/layout/Landing.scss";
-import { useHover } from '../context/HoverContext.jsx';
 
 const Landing = () => {
-  const { isHovered } = useHover();  
-
   return (
-    <div className={`main--img__landing ${isHovered ? 'hovered' : ''}`}>
+    <div className="main--img__landing">
+        <video autoPlay muted loop className="background-video">
+        <source src="./src/images/Hermana_Furia_B1.mp4" type="video/mp4" />
+        Tu navegador no soporta videos en formato MP4.
+      </video>
+      <h1 className='main-title'>HERMANA FURIA</h1>
+
       <Header2 />
     </div>
   );
