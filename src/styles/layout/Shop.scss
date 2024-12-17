@@ -2,62 +2,81 @@
 @use '../core/Variables.scss' as *;
 @use '../core/Mixins.scss' as *;
 
+.main--img__nb {
+  background-image: url(/src/images/Hermana_Furia_B3.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
 
+.dossier--link__shop {
+  position: absolute;
+  width: 60vw;
+  height: 100vh;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.main--img__nb{
-    background-image: url(/src/images/Hermana_Furia_B3.png);
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
+.div--shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 40%;
+}
+
+.link--shop {
+  font-family: $mainFont;
+  color: $white;
+  border: 3px solid $white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &:hover {
+    color: $mainColor;
+    border-color: $mainColor;
   }
 
-  .dossier--link__shop{
-    position: absolute;
-    width: 60vw;
-    height: 100vh;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%,50%);
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
   }
-  
-  .div--shop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-    width: 40%;
+  @media (min-width: 1024px) {
+    font-size: 1.6rem;
   }
-  
-  .link--shop{
-    // width: 40%;
-    font-family: $mainFont;
-    color: $white;
-    border: 3px solid $white;
-    text-align: center;
-    font-size: 1.5rem;
-    padding:1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    &:hover{
-      color: $mainColor;
-      border-color: $mainColor;
-    }
-      @media (min-width: 768px){
-          font-size: 1.8rem;
-      }
-      @media (min-width: 1024px){
-        font-size:1.6rem;
-      }
-      }
-  
-  
+}
+
+// NUEVO ESTILO PARA EL IFRAME CENTRADO
+.iframe--container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65vw; // Ajusta el tamaño del iframe
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; // Coloca el iframe sobre el fondo
+  background-color: rgba(0, 0, 0, 0.1); // Opcional: transparencia suave para destacar
+  border: 2px solid $white; // Borde para mejor visualización
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); // Sombra para dar profundidad
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
