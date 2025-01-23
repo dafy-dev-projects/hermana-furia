@@ -6,7 +6,7 @@ import "../styles/layout/Landing.scss";
 const Landing = () => {
   return (
     <div className="main--img__landing">
-        <video autoPlay muted loop  className="background-video">
+        <video autoPlay muted loop playsinline className="background-video">
         <source src="/hermana-furia/video/Hermana_Furia_B1.mp4" type="video/mp4" />
         Tu navegador no soporta videos en formato MP4.
       </video>
